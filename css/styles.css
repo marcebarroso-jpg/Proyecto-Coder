@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+
+}
+div, ul, nav, header, footer, a, li, label{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font-family: "Montserrat" "sans-serif";
+    background-color: #939393  ;
+    color: #101632dd;
+}
+.barranav{
+    background-color: #18233f;
+    color: #fffd;
+}
+h1{
+    justify-content: center ;
+}
+
+.parrafo{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.kanji{
+    width: 200px;
+}
+
+.presenta{
+    background-color: #fffd;
+    border: 2px solid #18233f;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+.intro{
+    background-color: #fffd;
+    color:  #18233f;    
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #18233f;
+    border-radius: 4px;
+}
+
+
+.founder{
+    background-color: #fffd;
+    color: #18233f;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #18233f;
+    border-radius: 4px;
+}
+
+.founder__description{
+    text-align: justify ;
+}
+
+.o-sensei{
+    min-width: 200px;
+    max-width: 60%;
+    align-self: center;
+    border-radius: 50%;
+}
+
+.pilares{
+    background-color: #fffd;
+    border: 2px solid #18233f;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 4px;
+}
+
+footer{
+    padding: 60px;
+    text-align: center;
+    background-color: #18233f;
+    color: #fffd;
+    font-size: 22px
+}   
+
+/*    css tecnicas.html */
+
+.ppal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    container-name: ppal;
+    container-type: inline-size;
+}
+
+
+.ppal__title{
+    padding: 20px;
+}
+.ppal__fundamentos-container{
+    width: 100%;
+    padding: 12px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "ikkio shihonage"
+    "iriminage kotegaeshi";
+    justify-content: center;
+    container-name: fundamentos;
+    container-type: inline-size;
+    grid-row: wrap;
+}
+
+.ppal__fundamentos-img{
+    object-fit: contain ;
+    width: 80%;
+    height: 80%;
+    max-width: 80vw;
+    min-height: 0;  
+} 
+
+.ppal__fundamentos-ikkio{
+    grid-area: ikkio;
+}
+
+.ppal__fundamentos-shihonage{
+    grid-area: shihonage;
+}   
+
+.ppal__fundamentos-kotegaeshi{
+    grid-area: kotegaeshi;
+}
+.ppal__fundamentos-iriminge{
+    grid-area: iriminage;
+}
+
+/*    media query               */
+@container ppal (max-width:600px){
+    .ppal__fundamentos-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "ikkio"
+        "shihonage"
+        "iriminage"
+        "kotegaeshi";
+    }
+    .ppal__fundamentos-ikkio{
+        grid-area: ikkio;
+    }
+
+    .ppal__fundamentos-shihonage{
+        grid-area: shihonage;
+    }
+
+    .ppal__fundamentos-kotegaeshi{
+        grid-area: kotegaeshi;
+    }
+    .ppal__fundamentos-iriminge{
+        grid-area: iriminage;
+    }
+
+}
