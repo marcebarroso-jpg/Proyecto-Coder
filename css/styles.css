@@ -9,7 +9,7 @@ div, ul, nav, header, footer, a, li, label{
 body{
     margin: 0;
     font-family: "Montserrat" "sans-serif";
-    background-color: #939393  ;
+    background-color: #94a5b4  ;
     color: #101632dd;
 }
 .barranav{
@@ -18,6 +18,7 @@ body{
 }
 h1{
     justify-content: center ;
+    font-size: 3.5rem;
 }
 
 .parrafo{
@@ -35,6 +36,7 @@ h1{
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
+    box-shadow: 0px 0px 40px #0006;
 }
 .intro{
     background-color: #fffd;
@@ -43,6 +45,7 @@ h1{
     margin: 20px;
     border: 2px solid #18233f;
     border-radius: 4px;
+    box-shadow: 0px 0px 40px #0006;
 }
 
 
@@ -53,6 +56,7 @@ h1{
     margin: 20px;
     border: 2px solid #18233f;
     border-radius: 4px;
+    box-shadow: 0px 0px 40px #0006;
 }
 
 .founder__description{
@@ -72,6 +76,7 @@ h1{
     padding: 20px;
     margin: 20px;
     border-radius: 4px;
+    box-shadow: 0px 0px 40px #0006;
 }
 
 footer{
@@ -91,16 +96,24 @@ footer{
     text-align: center;
     container-name: ppal;
     container-type: inline-size;
+    align-items: center;
 }
 
+.ppal__tecnicos{
+    background-color: #fff;
+    border: 2px solid #18233f;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0;
+}
 
 .ppal__title{
     padding: 20px;
+    margin: 20px;
 }
 .ppal__fundamentos-container{
-    width: 100%;
-    padding: 12px;
     display: grid;
+    width: 80vw;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -114,8 +127,8 @@ footer{
 }
 
 .ppal__fundamentos-img{
-    object-fit: contain ;
-    width: 80%;
+    object-fit:contain ;
+    width: 100%;
     height: 80%;
     max-width: 80vw;
     min-height: 0;  
@@ -135,6 +148,56 @@ footer{
 .ppal__fundamentos-iriminge{
     grid-area: iriminage;
 }
+
+.ppal__espiritu-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;    
+}
+
+
+.ppal__espiritu{
+    background-color: #fff;
+    border: 2px solid #18233f;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.ppal__espiritu-entrenamiento{
+width: 300px;
+ border: 2px solid #fffd;
+ border-radius: 4px;
+}
+
+.ppal__espiritu-armas{
+    width: 300px;
+    border: 2px solid #fffd;
+    border-radius: 4px;
+}
+.ppal__espiritu-tecnica{ 
+    width: 300px;
+    border: 2px solid #fffd;
+    border-radius: 4px;
+}
+.ppal__espiritu-tecnica img{
+    width: 100%;
+    border: 2px solid #fffd;
+    border-radius: 2px;
+}
+.ppal__espiritu-entrenamiento img{
+    width: 100%;
+    border: 2px solid #fffd;
+    border-radius: 2px;
+}
+.ppal__espiritu-armas img{
+    width: 100%;
+    border: 2px solid #fffd;
+    border-radius: 2px;
+}
+
 
 /*    media query               */
 @container ppal (max-width:600px){
