@@ -205,7 +205,8 @@ width: 300px;
 }
 
 
-/* ------- tecnicas  -------------------*/
+/*------- tecnicas  -------------------*/
+
 .tecnicas-title{
     margin: 20px;
     padding: 20px;
@@ -225,12 +226,12 @@ width: 300px;
     height: 100%;
 }
 
-/* Por defecto, el cartel está oculto */
+/* Por defecto, el cartel está oculto *
 .aviso-girar {
     display: none;
 }
 
-/* Si el celular está en vertical (portrait), mostramos el cartel */
+/* Si el celular está en vertical (portrait), mostramos el cartel *
 @media (orientation: portrait) and (max-width: 480px) {
 .aviso-girar {
     display: block;
@@ -247,7 +248,7 @@ width: 300px;
 }
 
 
-/* Si el celular está en vertical (portrait), mostramos el cartel */
+/* Si el celular está en vertical (portrait), mostramos el cartel *
 @media (orientation: landscape) and (max-width: 1000px) {
 
 main{
@@ -267,7 +268,7 @@ main{
     display: none;
 }
 }
-
+*/
 
 
 
