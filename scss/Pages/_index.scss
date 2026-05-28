@@ -1,0 +1,39 @@
+@use '../Utilities/extends' as *;
+@use '../Utilities/variables' as *;
+
+.presenta {
+    @extend %cajas-inicio;
+
+    .kanji {
+        width: 200px;
+    }
+
+    h1 {
+        justify-content: center;
+        font-size: 3.5rem;
+    }
+}
+
+.intro {
+    @extend %cajas-inicio;
+}
+
+.founder {
+    @extend %cajas-inicio;
+
+    .o-sensei {
+        min-width: 200px;
+        max-width: 60%;
+        align-self: center;
+        border-radius: 50%;
+    }
+
+    .founder__description {
+        text-align: justify;
+    }
+}
+
+.pilares {
+    @extend %cajas-inicio;
+
+}

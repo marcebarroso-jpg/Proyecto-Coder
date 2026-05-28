@@ -1,0 +1,14 @@
+@use '../Utilities/variables' as *;
+
+
+
+body {
+    min-height: 100vh;
+    font-family: $font-family;
+    background-color: $color-fondo;
+    ;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+}
+
