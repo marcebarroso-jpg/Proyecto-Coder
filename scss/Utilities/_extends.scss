@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+%margin-padding {
+    margin: $margin-20;
+    padding: $padding-20;
+}   
+
+%cajas-inicio-sinSombra {
+    background-color: $secondary-color;
+    @extend %margin-padding;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    border-radius: $border-radius-8;
+
+}
+
+%cajas-inicio {
+    @extend %cajas-inicio-sinSombra;
+    box-shadow: 0px 0px 40px #0006;
+}
+
+%cards-espiritu {
+    width: 300px;
+    border: 2px solid #fffd;
+    border-radius: 4px;
+}

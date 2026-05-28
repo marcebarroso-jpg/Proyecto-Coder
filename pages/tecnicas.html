@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+NZ+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <!-- custom css-->
     <link rel="stylesheet" href="../css/styles.css">
+    
     <link rel="icon" href="../Images/favicon-aikido-kanji.png" type="image/png">
     <title>Aikido</title>
 </head>
@@ -22,10 +25,13 @@
                 <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="Fundamentos.html">Fundamentos</a>
+                <a class="nav-link" href="fundamentos.html">Fundamentos</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="tecnicas.html">Técnicas</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="maestros.html">Maestros</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="contacto.html">Contacto</a>
@@ -50,27 +56,27 @@
                     <div class="carousel-inner tecnicas-videos">
                         <div class="carousel-item active">
                             <div class="ratio ratio-16x9">
-                                    <iframe src="https://www.youtube.com/embed/QQ0PlJrI7IA?si=3drMmBKUH5I7v-ur" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe class="youtube" src="https://www.youtube.com/embed/QQ0PlJrI7IA?si=3drMmBKUH5I7v-ur&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="ratio ratio-16x9">
-                                <iframe src="https://www.youtube.com/embed/kKBmg0zpav0?si=nx-rYWkOZjpX3dl2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe class="youtube" src="https://www.youtube.com/embed/kKBmg0zpav0?si=nx-rYWkOZjpX3dl2&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="ratio ratio-16x9">
-                                <iframe  src="https://www.youtube.com/embed/ZTulEW8VrIw?si=xFkChyAoFjVcO9_D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe class="youtube" src="https://www.youtube.com/embed/ZTulEW8VrIw?si=xFkChyAoFjVcO9_D&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="ratio ratio-16x9">
-                                <iframe src="https://www.youtube.com/embed/kthJ7_tw59c?si=Cvit483IuJ9Tfr8f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe class="youtube"src="https://www.youtube.com/embed/kthJ7_tw59c?si=Cvit483IuJ9Tfr8f&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="ratio ratio-16x9">
-                                <iframe  src="https://www.youtube.com/embed/HM9NtqfJTgw?si=audFGDJQJKBLknRP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe  class="youtube" src="https://www.youtube.com/embed/HM9NtqfJTgw?si=audFGDJQJKBLknRP&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div> 
                         </div>
                     </div>
@@ -88,5 +94,6 @@
     </main>
     <footer class="footer-tecnicas"><strong>Marcelo Alejandro Barroso</strong> Copyritght</footer>        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

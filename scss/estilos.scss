@@ -1,0 +1,13 @@
+@use'./Utilities/variables' as *;
+@use './Utilities/extends' as *;
+
+@use './base/reset';
+@use './base/header';
+@use './base/base';
+@use './base/footer';
+
+@use './Pages/index';
+@use './Pages/fundamentos';
+@use './Pages/tecnicas';
+@use './Pages/maestros';
+@use './Pages/contacto' 

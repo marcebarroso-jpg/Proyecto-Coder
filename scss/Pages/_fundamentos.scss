@@ -1,0 +1,118 @@
+@use '../Utilities/variables' as *;
+@use '../Utilities/extends' as *;
+
+
+.ppal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    container-name: ppal;
+    container-type: inline-size;
+    align-items: center;
+
+    .ppal__title {
+        @extend %margin-padding;
+    }
+
+
+    .ppal__tecnicos {
+        @extend %cajas-inicio-sinSombra;
+
+        .ppal__tecnico-title {
+            @extend %margin-padding;
+        }
+
+        .ppal__fundamentos-container {
+            display: grid;
+            width: 80vw;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                "ikkio shihonage"
+                "iriminage kotegaeshi";
+            justify-content: center;
+            grid-row: wrap;
+        }
+                .ppal__fundamentos-ikkio {
+            grid-area: ikkio;
+        }
+
+        .ppal__fundamentos-shihonage {
+            grid-area: shihonage;
+        }
+
+        .ppal__fundamentos-kotegaeshi {
+            grid-area: kotegaeshi;
+        }
+
+        .ppal__fundamentos-iriminge {
+            grid-area: iriminage;
+        }
+
+        .ppal__fundamentos-img {
+            object-fit: contain;
+            width: 100%;
+            height: 80%;
+            max-width: 80vw;
+            min-height: 0;
+        }
+    }
+    
+    .ppal__espiritu {
+        @extend %cajas-inicio-sinSombra;
+        .ppal__espiritu-title {
+            @extend %margin-padding;
+        }
+        .ppal__espiritu-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-evenly;
+            .ppal__espiritu-entrenamiento {
+                @extend %cards-espiritu;
+            }
+            .ppal__espiritu-armas{
+                @extend %cards-espiritu;
+            }
+            .ppal__espiritu-tecnica{
+                @extend %cards-espiritu;
+            }
+            img{
+                width: 100%;
+                border: 2px solid #fffd;
+                border-radius: 2px;
+            }
+        }
+    }
+
+
+}
+
+@container ppal (max-width:600px){
+    .ppal__fundamentos-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "ikkio"
+        "shihonage"
+        "iriminage"
+        "kotegaeshi";
+    }
+    .ppal__fundamentos-ikkio{
+        grid-area: ikkio;
+    }
+
+    .ppal__fundamentos-shihonage{
+        grid-area: shihonage;
+    }
+
+    .ppal__fundamentos-kotegaeshi{
+        grid-area: kotegaeshi;
+    }
+    .ppal__fundamentos-iriminge{
+        grid-area: iriminage;
+    }
+}
