@@ -30,11 +30,11 @@ if (pagina === "contacto") {
     const form = document.getElementById('contactoForm');
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
-
+        
         const body = Object.fromEntries(new FormData(e.target));
-
+        
         try {
-            const response = await fetch('https://marcebarroso.app.n8n.cloud/webhook-test/incomming-contact', {
+            const response = await fetch( CONFIG.webhookUrlProd , {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(body)
@@ -49,4 +49,4 @@ if (pagina === "contacto") {
         }
         }
     );
-}
+}   
