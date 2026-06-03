@@ -17,7 +17,13 @@
 
 
     .ppal__tecnicos {
+        display: flex;
+        flex-direction: column;
+        container-name: tecnicos;
+        container-type: inline-size;
+        width: 100%;
         @extend %cajas-inicio-sinSombra;
+
 
         .ppal__tecnico-title {
             @extend %margin-padding;
@@ -25,7 +31,7 @@
 
         .ppal__fundamentos-container {
             display: grid;
-            width: 80vw;
+            width: 100%;
             gap: 10px;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr;
@@ -33,7 +39,6 @@
                 "ikkio shihonage"
                 "iriminage kotegaeshi";
             justify-content: center;
-            grid-row: wrap;
         }
                 .ppal__fundamentos-ikkio {
             grid-area: ikkio;
@@ -47,7 +52,7 @@
             grid-area: kotegaeshi;
         }
 
-        .ppal__fundamentos-iriminge {
+        .ppal__fundamentos-iriminage {
             grid-area: iriminage;
         }
 
@@ -62,6 +67,7 @@
     
     .ppal__espiritu {
         @extend %cajas-inicio-sinSombra;
+        
         .ppal__espiritu-title {
             @extend %margin-padding;
         }
@@ -91,8 +97,8 @@
 
 }
 
-@container ppal (max-width:600px){
-    .ppal__fundamentos-container{
+@media (max-width: 600px) {
+    .ppal .ppal__tecnicos .ppal__fundamentos-container{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -112,7 +118,7 @@
     .ppal__fundamentos-kotegaeshi{
         grid-area: kotegaeshi;
     }
-    .ppal__fundamentos-iriminge{
+    .ppal__fundamentos-iriminage{
         grid-area: iriminage;
     }
 }
